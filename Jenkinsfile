@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'pip install --no-cache-dir -r requirements.txt'
-                sh 'pytest -v'
+                sh 'python -m pytest -v'
             }
         }
     }
